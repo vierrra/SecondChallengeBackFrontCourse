@@ -34,9 +34,4 @@ class CustomTableViewCell: UITableViewCell {
         nameUserLabel.text = data.name
         photoUserImageView.image = data.image
     }
-    
-//    func setupCell(_ nameUser: String, _ photoImage: UIImage) {
-//        nameUserLabel.text = nameUser
-//        photoUserImageView.image = photoImage
-//    }
 }
