@@ -1,24 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pN8-rv-eCv">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Item 2-->
+        <scene sceneID="fEm-ig-EtH">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="p1G-h6-QzI" customClass="PhoneViewController" customModule="CourseChallengeTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vgm-GW-jYf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="3ae-3C-cWJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="phone" catalog="system" id="zGA-Zd-XzI"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYH-Yb-aVW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-31" y="230"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="X7F-v2-cnD">
+            <objects>
+                <viewController id="I7k-1U-dqe" customClass="TrashViewController" customModule="CourseChallengeTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C9c-3G-CbB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SVZ-P0-gsB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="trash" catalog="system" id="dwO-5v-R7d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cjg-E3-rff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="-357"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="Q3w-bE-oiv">
+            <objects>
+                <viewController id="hqG-hp-3SK" customClass="PersonViewController" customModule="CourseChallengeTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QOH-vL-I98">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Und-7P-u6M">
+                                <rect key="frame" x="96" y="90.999999999999986" width="200" height="205.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="209" id="luw-Et-hbN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIv-n4-ztd">
+                                <rect key="frame" x="143" y="308" width="107" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Editar Foto"/>
+                                <connections>
+                                    <action selector="editPhotoAction:" destination="hqG-hp-3SK" eventType="touchUpInside" id="8rL-b7-7wx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhU-KK-hTp">
+                                <rect key="frame" x="16" y="329" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oSf-Tc-MRy">
+                                <rect key="frame" x="16" y="358" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQA-9f-2Tq">
+                                <rect key="frame" x="151" y="409" width="92" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Adcionar"/>
+                                <connections>
+                                    <action selector="addedDataPersonAction:" destination="hqG-hp-3SK" eventType="touchUpInside" id="cyK-ga-0en"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tpB-PR-H3p">
+                                <rect key="frame" x="0.0" y="454" width="393" height="315"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gfC-Iq-Ze5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gfC-Iq-Ze5" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VhU-KK-hTp" secondAttribute="trailing" symbolic="YES" id="2Du-5d-tx5"/>
+                            <constraint firstItem="tQA-9f-2Tq" firstAttribute="leading" secondItem="gfC-Iq-Ze5" secondAttribute="leading" constant="151" id="2xj-JG-uOc"/>
+                            <constraint firstItem="Und-7P-u6M" firstAttribute="top" secondItem="gfC-Iq-Ze5" secondAttribute="top" constant="30" id="8ep-Qc-coj"/>
+                            <constraint firstItem="VhU-KK-hTp" firstAttribute="top" secondItem="gfC-Iq-Ze5" secondAttribute="top" constant="270" id="CLf-bZ-Ewv"/>
+                            <constraint firstItem="oSf-Tc-MRy" firstAttribute="top" secondItem="VhU-KK-hTp" secondAttribute="bottom" constant="8" id="JJQ-dE-rGN"/>
+                            <constraint firstItem="gfC-Iq-Ze5" firstAttribute="trailing" secondItem="vIv-n4-ztd" secondAttribute="trailing" constant="143" id="K3B-zY-mWx"/>
+                            <constraint firstItem="tQA-9f-2Tq" firstAttribute="top" secondItem="oSf-Tc-MRy" secondAttribute="bottom" constant="17" id="MSg-DO-MAD"/>
+                            <constraint firstItem="gfC-Iq-Ze5" firstAttribute="trailing" secondItem="Und-7P-u6M" secondAttribute="trailing" constant="97" id="PNs-hr-m31"/>
+                            <constraint firstItem="gfC-Iq-Ze5" firstAttribute="bottom" secondItem="tpB-PR-H3p" secondAttribute="bottom" id="Ugf-RQ-bcE"/>
+                            <constraint firstItem="tpB-PR-H3p" firstAttribute="top" secondItem="tQA-9f-2Tq" secondAttribute="bottom" constant="10" id="VAF-uU-MHp"/>
+                            <constraint firstItem="gfC-Iq-Ze5" firstAttribute="trailing" secondItem="tQA-9f-2Tq" secondAttribute="trailing" constant="150" id="fSG-Ld-s7g"/>
+                            <constraint firstItem="gfC-Iq-Ze5" firstAttribute="trailing" secondItem="tpB-PR-H3p" secondAttribute="trailing" id="kke-uo-BnL"/>
+                            <constraint firstItem="Und-7P-u6M" firstAttribute="leading" secondItem="gfC-Iq-Ze5" secondAttribute="leading" constant="96" id="nzN-vW-k99"/>
+                            <constraint firstItem="VhU-KK-hTp" firstAttribute="leading" secondItem="gfC-Iq-Ze5" secondAttribute="leading" constant="16" id="oGO-0F-s31"/>
+                            <constraint firstItem="oSf-Tc-MRy" firstAttribute="leading" secondItem="gfC-Iq-Ze5" secondAttribute="leading" constant="16" id="qJd-NR-X7y"/>
+                            <constraint firstItem="tpB-PR-H3p" firstAttribute="leading" secondItem="gfC-Iq-Ze5" secondAttribute="leading" id="sKA-nL-Mqq"/>
+                            <constraint firstItem="vIv-n4-ztd" firstAttribute="top" secondItem="Und-7P-u6M" secondAttribute="bottom" constant="10" id="tfj-Fo-ZkG"/>
+                            <constraint firstItem="gfC-Iq-Ze5" firstAttribute="trailing" secondItem="oSf-Tc-MRy" secondAttribute="trailing" constant="16" id="ueH-6M-m10"/>
+                            <constraint firstItem="vIv-n4-ztd" firstAttribute="leading" secondItem="gfC-Iq-Ze5" secondAttribute="leading" constant="143" id="vHc-bw-Zld"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="person" catalog="system" id="E3q-Ls-gFV"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="oSf-Tc-MRy" id="jnQ-hn-Av5"/>
+                        <outlet property="photoImageView" destination="Und-7P-u6M" id="tCA-oa-d9b"/>
+                        <outlet property="tableView" destination="tpB-PR-H3p" id="074-Vm-QJ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RtL-2T-urT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="-885.21126760563379"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="WxF-HW-hdG">
+            <objects>
+                <tabBarController id="pN8-rv-eCv" customClass="TabBarViewController" customModule="CourseChallengeTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="STc-GG-hma">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hqG-hp-3SK" kind="relationship" relationship="viewControllers" id="oE1-6b-bWj"/>
+                        <segue destination="p1G-h6-QzI" kind="relationship" relationship="viewControllers" id="eCc-3D-yQA"/>
+                        <segue destination="I7k-1U-dqe" kind="relationship" relationship="viewControllers" id="xqa-wx-bLP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVi-Wb-KnY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-936" y="-357"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="phone" catalog="system" width="128" height="115"/>
+        <image name="trash" catalog="system" width="117" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
